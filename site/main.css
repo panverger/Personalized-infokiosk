@@ -1,0 +1,90 @@
+body {
+	background-image:url("images/blue_abstract_background.jpg")
+	
+}
+#bottom-container {
+  background-color: #4C0050; /* Green */
+  position: absolute;
+  height:9%;
+  top:90%;
+  width:99%;  
+}
+
+.left {
+	display: inline-block;
+    float:left;
+    margin-left:20px;
+	margin-bottom:20px;
+	opacity:80%;
+}
+.right {
+	display: inline-block;
+    float:right;
+	margin-right:20px;
+	margin-bottom:20px;
+	opacity:80%;
+}
+
+.select {
+	display: inline-block;
+	margin-left:40%;
+	opacity:80%;
+}
+
+.leftArrow {
+  width: 10vh;
+  height: auto;
+}
+.rightArrow {
+  float:right;
+  width: 10vh;
+  height: auto;
+}
+
+.selectArrow {
+  width: 7vh;
+  height: auto;
+}
+
+#title {
+	background-color: #ffff89; /* Green */
+	width:100%;
+	margin-bottom:5px;
+	font-size:2vw;
+}
+
+#side {
+	float:left;
+	width:10%;
+	margin: auto;
+	font-size:1.2vw;
+}
+
+#main {
+	float:left;
+	width:90%;
+	margin: auto;
+}
+
+
+#msg {
+  display: none;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 130px;
+  font-size: 27px;
+}
+
+#msg.show {
+  display: inline;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}

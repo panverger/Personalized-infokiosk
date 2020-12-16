@@ -1,0 +1,93 @@
+body{
+	color: white;
+}
+.wrapper{
+	width: 100%;
+}
+.content{
+	margin: 0 auto 0 auto; 
+	width: 700px; 
+	background: gray;
+	padding: 20px;
+}
+.txt-fld{
+	height: 30px;
+	width: 300px;
+}
+.btn{
+	padding: 5px 10px 5px 10px;
+}
+.sortable{
+	margin:0px;padding:0px;
+	width:100%;	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	background: #afd3e3;
+}
+.sortable thead th{
+	padding:7px;
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, 
+	color-stop(0.05, #005fbf), color-stop(1, #003f7f) );	
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );	
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", 
+	endColorstr="#003f7f");	
+	background: -o-linear-gradient(top,#005fbf,003f7f);
+	background-color:#005fbf;
+}
+
+
+.sortable td{
+	background: white;
+	text-align: center;
+	padding: 7px;
+	font-size: 12px;
+	font-family: Tahoma Arial;
+	font-weight: normal;
+	color: #000000;
+}
+a.link-btn {
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+	background: #4479BA;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #20538D;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, 
+	color-stop(0.05, #005fbf), color-stop(1, #003f7f) );	
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+ }
+ a.link-btn:hover{
+    /*background: #356094;*/
+    border: solid 1px #2A4E77;
+    text-decoration: none;	
+	background:-o-linear-gradient(bottom, #356094 5%, #003f7f 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, 
+	color-stop(0.05, #356094), color-stop(1, #003f7f) );	
+	background:-moz-linear-gradient( center top, #356094 5%, #003f7f 100% );
+ }
+ 
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+
+#popup {
+    display:    none;
+	padding: 20px;
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	background-color:#eeeeee;
+	border:5px solid #68ad0e;
+	width:50%;
+	height:50%;
+	margin-left:-25%;
+	margin-top:-10%;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	z-index: 9002; /*above nine thousand*/
+}
